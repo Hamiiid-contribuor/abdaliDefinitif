@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="4bce558b-a2a0-49f0-a1c0-58926ed4390a">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="id" class="java.lang.String">
+		<fieldDescription><![CDATA[id]]></fieldDescription>
+	</field>
+	<field name="sexe" class="java.lang.String">
+		<fieldDescription><![CDATA[sexe]]></fieldDescription>
+	</field>
+	<field name="prenom" class="java.lang.String">
+		<fieldDescription><![CDATA[prenom]]></fieldDescription>
+	</field>
+	<field name="nomFamille" class="java.lang.String">
+		<fieldDescription><![CDATA[nomFamille]]></fieldDescription>
+	</field>
+	<field name="dateNaissance" class="java.util.Date">
+		<fieldDescription><![CDATA[dateNaissance]]></fieldDescription>
+	</field>
+	<field name="payes" class="java.lang.String">
+		<fieldDescription><![CDATA[payes]]></fieldDescription>
+	</field>
+	<field name="ville" class="java.lang.String">
+		<fieldDescription><![CDATA[ville]]></fieldDescription>
+	</field>
+	<field name="telMobile" class="java.lang.String">
+		<fieldDescription><![CDATA[telMobile]]></fieldDescription>
+	</field>
+	<field name="telFixe" class="java.lang.String">
+		<fieldDescription><![CDATA[telFixe]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="77" splitType="Stretch">
+			<staticText>
+				<reportElement x="220" y="57" width="122" height="20" uuid="01909954-6dda-4eb2-ab31-5730b1a31af6"/>
+				<text><![CDATA[List des Fiched Patients]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="21" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="61" height="20" uuid="99644371-05ac-4ba7-a542-db75bd70b887"/>
+				<text><![CDATA[N° dossier ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="61" y="0" width="61" height="20" uuid="5131b5af-dedf-4dbf-8c39-e240efb2bbc1"/>
+				<text><![CDATA[sexe]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="122" y="0" width="61" height="20" uuid="f0163e75-ea5a-4b1d-a3ab-399779285311"/>
+				<text><![CDATA[prenom]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="183" y="0" width="61" height="20" uuid="0f72f723-5d8f-46a5-8eb6-a78eac643945"/>
+				<text><![CDATA[nomFamille]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="244" y="0" width="76" height="20" uuid="5f18e2b7-74ab-4ddf-bbc0-7478674535b0"/>
+				<text><![CDATA[dateNaissance]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="320" y="0" width="46" height="20" uuid="20b8277d-0fa5-492a-83a2-c03a73e2a5ee"/>
+				<text><![CDATA[payes]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="366" y="0" width="61" height="20" uuid="061a5683-4c30-4cc3-b2f4-c3ac2ff8e595"/>
+				<text><![CDATA[ville]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="427" y="0" width="61" height="20" uuid="72f269bc-3efc-44cf-b670-c1d3dec04955"/>
+				<text><![CDATA[telMobile]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="488" y="0" width="61" height="20" uuid="9adae3db-075c-41bf-8a4e-b45c6c45ff53"/>
+				<text><![CDATA[telFixe]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="21" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="61" height="20" uuid="e54e19a0-7bef-49b6-a0df-ab065d1f7c98"/>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="61" y="0" width="61" height="20" uuid="bb987cb4-65d6-4afa-8186-0e2f83cd4203"/>
+				<textFieldExpression><![CDATA[$F{sexe}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="122" y="0" width="61" height="20" uuid="f8c1aca5-728d-472b-a982-c178245e345e"/>
+				<textFieldExpression><![CDATA[$F{prenom}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="183" y="0" width="61" height="20" uuid="0a06e1ed-a4e3-4395-974c-f24426e72aa5"/>
+				<textFieldExpression><![CDATA[$F{nomFamille}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="244" y="0" width="76" height="20" uuid="0060cf26-3171-463c-bde7-245a0815e7c8"/>
+				<textFieldExpression><![CDATA[$F{dateNaissance}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="0" width="46" height="20" uuid="c9d91b61-b7e4-4903-9901-ecc810c7935d"/>
+				<textFieldExpression><![CDATA[$F{payes}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="366" y="0" width="61" height="20" uuid="664fe713-7658-4f23-9380-3f6df7c3f2ca"/>
+				<textFieldExpression><![CDATA[$F{ville}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="427" y="0" width="61" height="20" uuid="d4e42a74-ca12-4f00-8089-4ddaf870a9cb"/>
+				<textFieldExpression><![CDATA[$F{telMobile}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="488" y="0" width="61" height="20" uuid="6ae5bd0a-d3e9-41d9-84be-912388f07eb2"/>
+				<textFieldExpression><![CDATA[$F{telFixe}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
